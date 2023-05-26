@@ -1,0 +1,34 @@
+name: Build
+
+on:
+  push:
+    branches:
+      - main
+    paths-ignore:
+      - '**.md'
+  pull_request:
+    paths-ignore:
+      - '**.md'
+  workflow_dispatch:
+
+jobs:
+  plugin-test:
+    timeout-minutes: 10
+    strategy:
+      fail-fast: false
+      matrix:
+        os:
+          - ubuntu-latest
+          - macos-latest
+        target:
+          - tool-version: 'latest'
+            command: 'yamlfmt -help'
+          - tool-version: '0.1.0'
+            # makers does not exist
+            command: 'yamlfmt -help'
+    runs-on: ${{ matrix.os }}
+    steps:
+      - uses: asdf-vm/actions/plugin-test@v2
+        with:
+          version: ${{ matrix.target.tool-version }}
+          command: ${{ matrix.target.command }}

@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+
+set -euo pipefail
+
+cat <<EOD
+yamlfmt: https://github.com/google/yamlfmt
+asdf plugin: https://github.com/kachick/asdf-yamlfmt
+short-name: Not Yet
+how to update .tool-versions: Not Yet
+EOD
