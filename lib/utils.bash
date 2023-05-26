@@ -75,8 +75,6 @@ install_version() {
 	(
 		mkdir -p "$install_path"
 
-		ls -al "${ASDF_DOWNLOAD_PATH}"
-
 		cp "${ASDF_DOWNLOAD_PATH}"/yamlfmt "$install_path"
 
 		local tool_cmd
