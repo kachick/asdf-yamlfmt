@@ -4,3 +4,5 @@ shfmt --language-dialect bash --write \
 	./**/*
 
 dprint fmt
+
+yamlfmt
