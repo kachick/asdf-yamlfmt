@@ -29,8 +29,6 @@ jobs:
           tool_versions: |
             # Should not set yamlfmt versions here. (Actually shellcheck is not used here)
             shellcheck 0.9.0
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       - name: Setup rtx
         run: |
           rtx plugins install yamlfmt https://github.com/kachick/asdf-yamlfmt.git#${{ github.ref }}
