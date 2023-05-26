@@ -9,3 +9,5 @@ shfmt --language-dialect bash --diff \
 	./**/*
 
 dprint check
+
+yamlfmt -lint

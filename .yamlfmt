@@ -1,0 +1,7 @@
+doublestar: true
+include:
+  - './**/*.{yaml,yml}'
+  - '.yamlfmt'
+formatter:
+  type: basic
+  retain_line_breaks: true
