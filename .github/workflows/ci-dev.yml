@@ -23,7 +23,7 @@ jobs:
       - uses: asdf-vm/actions/setup@v2
       - run: |
           asdf plugin-add yamlfmt .
-          asdf install yamlfmt
+          asdf install
           makers help
           makers setup
           makers check
