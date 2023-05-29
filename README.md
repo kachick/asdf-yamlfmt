@@ -17,7 +17,7 @@ Plugin:
 asdf plugin add yamlfmt https://github.com/kachick/asdf-yamlfmt.git
 ```
 
-short-name is not yet available
+[short-name is also available](https://github.com/asdf-vm/asdf-plugins/blob/42ef3772359cb2142e357508706acacf44fddf10/plugins/yamlfmt#L1) if you turn off [disable_plugin_short_name_repository](https://asdf-vm.com/manage/configuration.html#disable-plugin-short-name-repository)
 
 ```shell
 asdf plugin add asdf-yamlfmt
