@@ -5,11 +5,11 @@
 [yamlfmt](https://github.com/google/yamlfmt/) plugin for the [asdf version manager](https://asdf-vm.com).\
 Tested also [rtx](https://github.com/jdxcode/rtx).
 
-# Dependencies
+## Dependencies
 
 - `bash`, `curl`, `tar`: generic POSIX utilities.
 
-# Install
+## Install
 
 Plugin:
 
@@ -41,10 +41,10 @@ yamlfmt -help
 Check [asdf](https://github.com/asdf-vm/asdf) readme for more instructions on how to
 install & manage versions.
 
-# Contributing
+## Contributing
 
 Contributions of any kind welcome! See the [contributing guide](CONTRIBUTING.md).
 
-# License
+## License
 
 See [LICENSE](LICENSE) © [Kenichi Kamiya](https://github.com/kachick/)
