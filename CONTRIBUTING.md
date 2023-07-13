@@ -9,7 +9,7 @@ $ makers setup
 ...
 ```
 
-`help` shows providing tasks for developping
+`help` shows providing tasks for developing
 
 ```console
 $ makers help
