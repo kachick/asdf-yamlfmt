@@ -5,7 +5,6 @@
   },
   "toml": {
   },
-  "includes": ["**/*.{json,md,toml}"],
   "excludes": [
     "**/*-lock.json"
   ],
