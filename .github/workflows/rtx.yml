@@ -28,7 +28,7 @@ jobs:
           - command: 'rtx x yamlfmt@0.1.0 -- yamlfmt -help'
     runs-on: ${{ matrix.os }}
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
       - uses: jdxcode/rtx-action@v1
         with:
           tool_versions: |
