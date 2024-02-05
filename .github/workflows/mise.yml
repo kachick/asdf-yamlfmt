@@ -1,4 +1,4 @@
-name: rtx
+name: mise
 on:
   push:
     branches:
@@ -24,22 +24,22 @@ jobs:
           - ubuntu-latest
           - macos-latest
         target:
-          - command: 'rtx x yamlfmt@latest -- yamlfmt -help'
-          - command: 'rtx x yamlfmt@0.1.0 -- yamlfmt -help'
+          - command: 'mise x yamlfmt@latest -- yamlfmt -help'
+          - command: 'mise x yamlfmt@0.1.0 -- yamlfmt -help'
     runs-on: ${{ matrix.os }}
     steps:
       - uses: actions/checkout@v4
-      - uses: jdxcode/rtx-action@v1
+      - uses: jdx/mise-action@v2
         with:
           tool_versions: |
             # Should not set yamlfmt versions here. (Actually shellcheck is not used here)
             shellcheck 0.9.0
-      - name: Setup rtx
+      - name: Setup mise
         run: |
-          rtx plugins install yamlfmt https://github.com/kachick/asdf-yamlfmt.git#${{ github.ref }}
+          mise plugins install yamlfmt https://github.com/kachick/asdf-yamlfmt.git#${{ github.ref }}
       - name: Test
         run: |
           ${{ matrix.target.command }}
         env:
-          # https://github.com/jdxcode/rtx/issues/188#issuecomment-1441835716
-          RTX_MISSING_RUNTIME_BEHAVIOR: autoinstall
+          # https://github.com/jdx/mise/issues/188#issuecomment-1441835716
+          MISE_MISSING_RUNTIME_BEHAVIOR: autoinstall

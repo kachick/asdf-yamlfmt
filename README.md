@@ -1,9 +1,9 @@
 # asdf-yamlfmt
 
-[![Build](https://github.com/kachick/asdf-yamlfmt/actions/workflows/build.yml/badge.svg?branch=main)](https://github.com/kachick/asdf-yamlfmt/actions/workflows/build.yml?query=branch%3Amain) [![Lint](https://github.com/kachick/asdf-yamlfmt/actions/workflows/lint.yml/badge.svg?branch=main)](https://github.com/kachick/asdf-yamlfmt/actions/workflows/lint.yml?query=branch%3Amain) [![rtx](https://github.com/kachick/asdf-yamlfmt/actions/workflows/rtx.yml/badge.svg?branch=main)](https://github.com/kachick/asdf-yamlfmt/actions/workflows/rtx.yml?query=branch%3Amain)
+[![Build](https://github.com/kachick/asdf-yamlfmt/actions/workflows/build.yml/badge.svg?branch=main)](https://github.com/kachick/asdf-yamlfmt/actions/workflows/build.yml?query=branch%3Amain) [![Lint](https://github.com/kachick/asdf-yamlfmt/actions/workflows/lint.yml/badge.svg?branch=main)](https://github.com/kachick/asdf-yamlfmt/actions/workflows/lint.yml?query=branch%3Amain) [![mise](https://github.com/kachick/asdf-yamlfmt/actions/workflows/mise.yml/badge.svg?branch=main)](https://github.com/kachick/asdf-yamlfmt/actions/workflows/mise.yml?query=branch%3Amain)
 
 [yamlfmt](https://github.com/google/yamlfmt/) plugin for the [asdf version manager](https://asdf-vm.com).\
-Tested also [rtx](https://github.com/jdxcode/rtx).
+Tested also [mise](https://github.com/jdx/mise).
 
 ## Dependencies
 
