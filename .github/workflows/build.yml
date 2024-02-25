@@ -45,7 +45,8 @@ jobs:
       matrix:
         os:
           - ubuntu-latest
-          - macos-latest
+          - macos-14 # M1
+          - macos-13 # Intel
         target:
           - command: 'mise x yamlfmt@latest -- yamlfmt -help'
           - command: 'mise x yamlfmt@0.1.0 -- yamlfmt -help'
