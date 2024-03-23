@@ -3,7 +3,7 @@
 After installing asdf, running below command in this repo finishes setups.
 
 ```console
-$ asdf plugin-add yamlfmt https://github.com/kachick/asdf-cargo-make.git
+$ asdf plugin-add asdf-cargo-make https://github.com/kachick/asdf-cargo-make.git
 $ asdf install cargo-make
 $ makers setup
 ...
