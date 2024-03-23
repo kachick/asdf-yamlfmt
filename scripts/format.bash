@@ -10,4 +10,4 @@ shfmt --language-dialect bash --write \
 
 dprint fmt
 
-yamlfmt
+yamlfmt -gitignore_excludes
