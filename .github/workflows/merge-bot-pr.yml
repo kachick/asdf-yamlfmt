@@ -34,9 +34,15 @@ jobs:
         uses: kachick/wait-other-jobs@v3
         timeout-minutes: 30
         with:
-          github-token: '${{ secrets.GITHUB_TOKEN }}'
           retry-method: 'equal_intervals'
           min-interval-seconds: '15'
+          skip-same-workflow: 'true'
+          skip-list: |
+            [
+              {
+                "workflowFile": "release.yml"
+              }
+            ]
       - name: Approve and merge
         run: gh pr review --approve "$PR_URL" && gh pr merge --auto --squash --delete-branch "$PR_URL"
         env:
@@ -59,9 +65,15 @@ jobs:
         uses: kachick/wait-other-jobs@v3
         timeout-minutes: 30
         with:
-          github-token: '${{ secrets.GITHUB_TOKEN }}'
           retry-method: 'equal_intervals'
           min-interval-seconds: '15'
+          skip-same-workflow: 'true'
+          skip-list: |
+            [
+              {
+                "workflowFile": "release.yml"
+              }
+            ]
       - name: Approve and merge
         run: gh pr review --approve "$PR_URL" && gh pr merge --auto --squash --delete-branch "$PR_URL"
         env:
