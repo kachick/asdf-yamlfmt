@@ -63,7 +63,7 @@ jobs:
           cache: false
       - name: Setup mise
         run: |
-          mise plugins install yamlfmt https://github.com/kachick/asdf-yamlfmt.git#${{ github.ref }}
+          mise plugins install yamlfmt 'https://github.com/${{ github.repository }}.git#${{ github.ref }}'
       - name: Test
         run: |
           ${{ matrix.target.command }}
